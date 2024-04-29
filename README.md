@@ -2,6 +2,7 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/raohwork/gorm0log.svg)](https://pkg.go.dev/github.com/raohwork/gorm0log)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/raohwork/gorm0log)
+[![Go Report Card](https://goreportcard.com/badge/github.com/raohwork/gorm0log)](https://goreportcard.com/report/github.com/raohwork/gorm0log)
 ![GitHub License](https://img.shields.io/github/license/raohwork/gorm0log)
 
 # TL; DR
