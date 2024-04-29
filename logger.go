@@ -12,8 +12,8 @@
 //
 // Default value of [Config] should be fairly enough for small projects.
 //
-// [gorm.DB.Debug] swtiches underlying [zerolog.Logger] to Debug level, which shows
-// every message but Trace level ones. Some features, controled by [Config], can be
+// [gorm.DB.Debug] switches underlying [zerolog.Logger] to Debug level, which shows
+// every message but Trace level ones. Some features, controlled by [Config], can be
 // set to customized level. So you can disable those messages by changing its level
 // to [UseTrace].
 package gorm0log
@@ -115,7 +115,7 @@ func (l *Logger) Trace(ctx context.Context, begin time.Time, f func() (string, i
 
 	if err != nil {
 		ev := l.errLevel(err, l.Logger)
-		ev.Func(l.custom(ctx)).Func(l.logErr(err, f)).Msg("a sql error occured")
+		ev.Func(l.custom(ctx)).Func(l.logErr(err, f)).Msg("a sql error occurred")
 
 		if ev.Enabled() {
 			// do not log other messages

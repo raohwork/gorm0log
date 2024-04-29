@@ -141,7 +141,7 @@ func Example() {
 	}
 
 	// output:<nil> DBG dump sql affected_rows=1 sql="INSERT INTO `users` (`name`) VALUES (\"John Doe\") RETURNING `id`"
-	// <nil> ERR a sql error occured error="record not found" affected_rows=0 sql="SELECT * FROM `users` WHERE `id` = 2 ORDER BY `users`.`id` LIMIT 1"
-	// <nil> DBG a sql error occured error="record not found" affected_rows=0 sql="SELECT * FROM `users` WHERE `id` = 4 ORDER BY `users`.`id` LIMIT 1"
+	// <nil> ERR a sql error occurred error="record not found" affected_rows=0 sql="SELECT * FROM `users` WHERE `id` = 2 ORDER BY `users`.`id` LIMIT 1"
+	// <nil> DBG a sql error occurred error="record not found" affected_rows=0 sql="SELECT * FROM `users` WHERE `id` = 4 ORDER BY `users`.`id` LIMIT 1"
 	// <nil> DBG dump sql affected_rows=0 sql="SELECT * FROM `users` WHERE `id` = 5 ORDER BY `users`.`id` LIMIT 1"
 }
